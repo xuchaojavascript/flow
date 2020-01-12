@@ -1,0 +1,71 @@
+#flowChart {
+  border: 1px solid #ebeef5;
+  position: relative;
+  overflow: hidden;
+}
+
+.operating {
+  position: absolute;
+  z-index: 99;
+  background-color: #ffffff;
+  padding: 20px 10px;
+  box-shadow: 1px 1px 4px 0 #0a0a0a2e;
+}
+
+.info {
+  position: absolute;
+  right: 0;
+  z-index: 99;
+  box-shadow: 1px 1px 4px 0 #0a0a0a2e;
+  .title {
+    height: 40px;
+    padding-left: 10px;
+    border-top: 1px solid #DCE3E8;
+    border-bottom: 1px solid #DCE3E8;
+    border-left: 1px solid #DCE3E8;
+    background: rgb(235, 238, 242);
+    line-height: 40px;
+    span {
+      font-size: 14px;
+    }
+  }
+  .content {
+    background: rgba(247, 249, 251, 0.45);
+    width: 200px;
+    height: 800px;
+    border-left: 1px solid #E6E9ED;
+    padding: 10px;
+  }
+}
+
+.btn-group {
+  border-right: 1px solid #efefef;
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 14px;
+  &:last-of-type {
+    border-right: 0;
+  }
+  .btn {
+    display: inline-block;
+    margin: 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid rgba(233, 233, 233, 0);
+    i {
+      font-size: 20px;
+    }
+    &:hover {
+      border: 1px solid #E9E9E9;
+      color: #767A85;
+      border-radius: 2px;
+      background: #FAFAFE;
+    }
+  }
+  .el-form-item {
+    margin-bottom: 0 !important;
+  }
+}
